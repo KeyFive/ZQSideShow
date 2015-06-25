@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1NR-yb-t2H">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--pan-->
+        <scene sceneID="vKY-oz-Kmy">
+            <objects>
+                <viewController id="ArO-hd-LJr" customClass="PanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Rb-ru-uCV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bgw-Sx-cPp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CIi-eC-cya">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pan" id="6uW-bh-e5e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRJ-WD-Ijn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1577" y="781"/>
+        </scene>
+        <!--show-->
+        <scene sceneID="Yga-mV-bXg">
+            <objects>
+                <viewController id="e4D-uJ-84m" customClass="ShowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gwc-pm-rnH"/>
+                        <viewControllerLayoutGuide type="bottom" id="vc0-YJ-o3C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BPx-Yd-WoX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZB-0V-WXO">
+                                <rect key="frame" x="284" y="28" width="30" height="30"/>
+                                <state key="normal" title="left">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSideView:" destination="e4D-uJ-84m" eventType="touchUpInside" id="zqS-FX-FkS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLZ-6f-53v">
+                                <rect key="frame" x="278" y="66" width="42" height="30"/>
+                                <state key="normal" title="leftUp">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSideView:" destination="e4D-uJ-84m" eventType="touchUpInside" id="Zyy-jS-f2f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lM-FB-QO7">
+                                <rect key="frame" x="274" y="104" width="51" height="30"/>
+                                <state key="normal" title="rightUp">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSideView:" destination="e4D-uJ-84m" eventType="touchUpInside" id="vHt-H3-NWb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-LA-Gn7">
+                                <rect key="frame" x="284.5" y="142" width="31" height="30"/>
+                                <state key="normal" title="right">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSideView:" destination="e4D-uJ-84m" eventType="touchUpInside" id="IF5-Ao-zwm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fOI-LA-Gn7" firstAttribute="top" secondItem="1lM-FB-QO7" secondAttribute="bottom" constant="8" symbolic="YES" id="0Am-Mq-0Kv"/>
+                            <constraint firstItem="1lM-FB-QO7" firstAttribute="centerX" secondItem="WLZ-6f-53v" secondAttribute="centerX" id="6Ka-Mk-RCz"/>
+                            <constraint firstItem="fZB-0V-WXO" firstAttribute="leading" secondItem="fOI-LA-Gn7" secondAttribute="leading" id="Mr6-LJ-omX"/>
+                            <constraint firstItem="fZB-0V-WXO" firstAttribute="top" secondItem="gwc-pm-rnH" secondAttribute="bottom" constant="8" symbolic="YES" id="Z8Y-qG-zM8"/>
+                            <constraint firstItem="WLZ-6f-53v" firstAttribute="top" secondItem="fZB-0V-WXO" secondAttribute="bottom" constant="8" symbolic="YES" id="cY8-Gn-DPS"/>
+                            <constraint firstItem="WLZ-6f-53v" firstAttribute="centerX" secondItem="fZB-0V-WXO" secondAttribute="centerX" id="eui-OI-tGd"/>
+                            <constraint firstItem="1lM-FB-QO7" firstAttribute="leading" secondItem="BPx-Yd-WoX" secondAttribute="leading" constant="265" id="lfh-Yo-DaE"/>
+                            <constraint firstAttribute="centerX" secondItem="1lM-FB-QO7" secondAttribute="centerX" id="pFf-sE-8oD"/>
+                            <constraint firstItem="1lM-FB-QO7" firstAttribute="top" secondItem="WLZ-6f-53v" secondAttribute="bottom" constant="8" symbolic="YES" id="viK-u9-O5b"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lfh-Yo-DaE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="show" id="a2N-Og-zR0"/>
+                    <connections>
+                        <outlet property="leftButtpn" destination="fZB-0V-WXO" id="RoW-p8-LcK"/>
+                        <outlet property="leftUpButton" destination="WLZ-6f-53v" id="9Zz-Ph-1CQ"/>
+                        <outlet property="rightButton" destination="fOI-LA-Gn7" id="J89-bQ-EDV"/>
+                        <outlet property="rightUpButton" destination="1lM-FB-QO7" id="6AJ-oS-tZ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LvC-lV-5yZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1577" y="119"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cml-sg-xV8">
+            <objects>
+                <tabBarController id="1NR-yb-t2H" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OpS-24-dZ8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e4D-uJ-84m" kind="relationship" relationship="viewControllers" id="iQA-KR-9t4"/>
+                        <segue destination="ArO-hd-LJr" kind="relationship" relationship="viewControllers" id="INn-My-nlT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1GY-Mq-mub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="450"/>
+        </scene>
+    </scenes>
+</document>
